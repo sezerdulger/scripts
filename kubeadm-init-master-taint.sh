@@ -1,5 +1,5 @@
 #!/bin/bash -ex
-if  [ $1 == "" ]; then
+if  [ -z $1 ]; then
   echo "enter advertised ip..."
   exit
 fi
