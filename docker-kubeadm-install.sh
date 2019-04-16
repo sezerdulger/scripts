@@ -14,3 +14,8 @@ EOF
 apt-get update
 apt-get install -y kubelet kubeadm kubectl
 apt-mark hold kubelet kubeadm kubectl
+
+echo "source <(kubeadm completion bash)" >> ~/.bashrc
+echo "source <(kubectl completion bash)" >> ~/.bashrc
+
+export KUBE_EDITOR=nano
